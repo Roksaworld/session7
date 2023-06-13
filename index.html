@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    <style>
+        * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 40px;
+}
+
+img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+  }
+
+.page-wrapper {
+    margin: 0 auto;
+    max-width: 768px;
+}
+
+.grid-container {
+    display:grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: repeat (4,200px );
+    grid-auto-rows: 200px;
+}
+
+
+.grid-container .special {
+    grid-column: 1/5;
+    margin: 0;
+}
+.grid-container .special2 {
+    grid-column: 1 / 3;
+    grid-row: 2 / 4;
+    margin: 0%;
+}
+
+.grid-container .special3 {
+    grid-column: 3 / 5 ;
+    margin: 0;
+    background-color: #6C8DC8;
+    color: #B3E5E3;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.grid-container .special4 {
+    margin: 0;
+    background-color: #B3E5E3; 
+    color: #6C8DC8;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+</style>
+</head>
+<body>
+
+<div class="page-wrapper">
+    <div class="grid-container">
+        <div class="special"> 
+            <img src="img/107821.jpeg" alt="img">
+        </div>
+        <div class="special2"> 
+            <img src="img/img2.png" alt="img">
+        </div>
+        <div class="special3">
+            <h1> KOKO </h1>
+            <h2>active</h2> 
+        </div>
+        <div class="special4"> 
+            <p> It is made for you </p>
+        </div>
+        <div class="special5"> 
+            <img src="img/img3.png" alt="img">
+        </div>  
+    </div>
+</div>   
+</body>
+</html>
